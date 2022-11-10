@@ -1,0 +1,185 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    margin-right: auto;
+    padding: 20px;
+    margin-left: 150px;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: #54bb8c;
+    font-family: Twentieth-Century;
+}
+
+.logo img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+    margin-right: 800px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li :hover {
+    color: #54bb8c;
+}
+
+.container{
+    width: 550px;
+    font-size: 30px;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+
+.container h2{
+    color:#54bb8c;
+    font-size: 60px;
+}
+
+.container h3{
+    color: #aeaeae;
+    font-size: 20px;
+
+}
+
+.home{
+    display: flex;
+    height: 1000px;
+    background-image: url(images/bg-menu.jpg);
+}
+
+#get-code{
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+.get-code{
+    background-color: #54bb8c;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-code:hover{
+    background-color: #3c8b68;
+}
+
+.get-code img{
+    width: 60px;
+    margin: 10px;
+}
+
+#container-step{
+    text-align: center;
+    font-size: 30px;
+    background-image: url(images/gelombang-putih.jpg);
+}
+
+.step{
+    display: flex;
+    justify-content: center;
+}
+
+.step1{
+    font-size: 20px;
+    padding: 50px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #54bb8c;
+    border-width: 5px;
+    background-color: #FFFFFF;
+}
+
+.step1 img{
+    width: 400px;
+    margin-top: 30px;
+}
+
+footer{
+    background-color: rgb(236, 236, 236);
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}
+
+.cover-footer-conten{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+
+.footer-conten{
+    width: 400px;
+    padding: 60px;
+}
+
+.footer-conten h1{
+    font-size: 35px;
+    color: #54bb8c;
+}
+
+.footer-conten h3{
+    margin-left: 10px;
+    font-size: 25px;
+    color: #54bb8c;
+}
+
+.footer-conten a{
+    font-family: helvetica;
+    color: grey;
+}
+
+.footer-conten li a:hover{
+    color: #54bb8c;
+}
+
+@font-face{
+    font-family: Twentieth-Century;
+    src: url(font/Twentieth-Century-W01.ttf);
+}
