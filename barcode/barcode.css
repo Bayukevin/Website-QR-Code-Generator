@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bg-menu.jpg);
+    font-family: Helvetica;
+}
+
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    margin-right: auto;
+    padding: 20px;
+    margin-left: 150px;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: #54bb8c;
+    font-family: Twentieth-Century;
+}
+
+.logo img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+    margin-right: 800px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li :hover {
+    color: #54bb8c;
+}
+
+.content{
+    background-color: rgb(236, 236, 236);
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+h1{
+    color:#54bb8c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border-qr{
+    width: 350px;
+    height: 200px;
+    border-color: #54bb8c ;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-qr{
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+input{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    border: 1px solid #54bb8c;
+    font-size: 15px;
+}
+
+#generate-btn{
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    background-color: #54bb8c;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 45%;
+}
+
+.btn-download{
+    position: absolute;
+    bottom: -50px;
+    width: auto;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn-download-img{
+    background-color: rgb(172, 172, 172);
+    border-radius: 15px;
+}
+
+.btn-download-img:hover{
+    background-color: grey;
+}
+
+
+
+@font-face{
+    font-family: Twentieth-Century;
+    src: url(/font/Twentieth-Century-W01.ttf);
+}
+  
+  #download {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #54bb8c;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  #download:hover{
+    background-color: #389269;
+  }
+  
+  form {
+    position: relative;
+    left: 30px;
+    top: 20px
+  }

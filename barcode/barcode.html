@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcode Generator</title>
+    <link rel="stylesheet" href="barcode.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.3.20/JsBarcode.all.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/images/logo-qr.png" />
+        <h1>BARCODE GENERATE</h1>
+      </div>
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="/">BERANDA</a></li>
+          <li><a href="#skils">TENTANG</a></li>
+          <li><a href="/#container-step">BANTUAN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="body">
+      <div class="content">
+        <h1>Barcode Generator</h1>
+        <div class="border-qr" id="border-qr">
+          <!-- <canvas id="qr-panel"></canvas> -->
+          <svg id="barcode"></svg>
+        </div>
+        <div id="form-qr">
+          <input
+            type="text"
+            name="codevalue"
+            placeholder="Masukkan kode angka disini"
+            id="input"
+          />
+          <!-- <button id="generate-btn">Generate</button> -->
+          <input type="button" id="generate-btn" value="Generate" />
+        </div>
+        <div>
+          <button onclick="downloadsvg()" id="download">Download SVG</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="barcode.js"></script>
+  </body>
+</html>
