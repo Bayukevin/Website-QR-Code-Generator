@@ -9,17 +9,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <div class="logo">
-        <img src="/images/logo-qr.png" />
-        <h1>QR GENERATE</h1>
-      </div>
-      <!-- Navbar -->
       <nav>
+        <a href="/" class="logo">
+          <img src="../images/logo-qr.png" />
+          <h1>QR GENERATE</h1>
+        </a>
         <ul>
-          <li><a href="/">BERANDA</a></li>
-          <li><a href="#skils">TENTANG</a></li>
-          <li><a href="/#container-step">BANTUAN</a></li>
+          <li><a href="/#">BERANDA</a></li>
+          <li><a href="/#section-2">TENTANG</a></li>
+          <li><a href="/#section-4">BANTUAN</a></li>
         </ul>
       </nav>
     </header>
@@ -42,29 +42,29 @@
     </div>
 
     <script>
-      let qrPanel = document.querySelector("#qr-panel");
-      let qrBtn = document.querySelector("#generate-btn");
-      let qrInput = document.querySelector("#qr-input");
-      let borderQr = document.querySelector("#border-qr");
-      var x = document.getElementById("dwn");
+      let qrPanel = document.querySelector('#qr-panel');
+      let qrBtn = document.querySelector('#generate-btn');
+      let qrInput = document.querySelector('#qr-input');
+      let borderQr = document.querySelector('#border-qr');
+      var x = document.getElementById('dwn');
 
       // QRCODE
-      qrBtn.addEventListener("click", () => {
+      qrBtn.addEventListener('click', () => {
         if (!qrInput.value) {
-          context = qrPanel.getContext("2d");
+          context = qrPanel.getContext('2d');
           make_base();
           function make_base() {
             base_image = new Image();
-            base_image.src = "/images/404.jpg";
+            base_image.src = '/images/404.jpg';
             base_image.onload = function () {
               context.drawImage(base_image, 0, 0, 300, 300);
             };
           }
-          console.log("ksoso");
-          borderQr.style.borderColor = "red";
+          console.log('ksoso');
+          borderQr.style.borderColor = 'red';
         } else {
-          borderQr.style.borderColor = "#54bb8c";
-          x.style.display = "block";
+          borderQr.style.borderColor = '#54bb8c';
+          x.style.display = 'block';
           new QRious({
             element: qrPanel,
             value: qrInput.value,

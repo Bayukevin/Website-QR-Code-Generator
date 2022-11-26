@@ -8,101 +8,120 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <div class="logo">
-        <img src="images/logo-qr.png" />
-        <h1>QR GENERATE</h1>
-      </div>
-      <!-- Navbar -->
       <nav>
+        <a href="/" class="logo">
+          <img src="images/logo-qr.png" />
+          <h1>QR GENERATE</h1>
+        </a>
         <ul>
-          <li><a href="#campus">BERANDA</a></li>
-          <li><a href="#skils">TENTANG</a></li>
-          <li><a href="#container-step">BANTUAN</a></li>
+          <li><a href="/#">BERANDA</a></li>
+          <li><a href="/#section-2">TENTANG</a></li>
+          <li><a href="/#section-4">BANTUAN</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Halaman Awal -->
     <main>
-      <div class="home">
-        <div class="container">
-          <h1>Buat & Sesuaikan Dinamis Anda</h1>
-          <h2>QR Code</h2>
-          <h3>
-            Hasilkan, kelola, dan statistik dengan mudah buat kode QR Anda
-            disini.
-          </h3>
-        </div>
-        <div id="get-code">
-          <center><h1>Buat Geratis Sekarang!</h1></center>
-          <div class="get-code">
-            <img src="images/QR.png" />
-            <a href="/generate/qrgenerator.html"><h1>QR Code</h1></a>
+      <!-- SECTION 1 - open -->
+      <section id="section-1">
+        <div class="parent-section-1">
+          <div class="container-section-1">
+            <h2 class="h-p">Buat & Sesuaikan Dinamis Anda</h2>
+            <h2>QR Code</h2>
+            <h4>
+              Hasilkan, kelola, dan statistik dengan mudah buat kode QR Anda
+              disini.
+            </h4>
           </div>
-          <div class="get-code">
-            <img src="images/BAR.png" />
-            <a href="/barcode/barcode.html"><h1>Bar Code</h1></a>
+          <div class="container-section-1">
+            <h1>Buat Geratis Sekarang!</h1>
+            <a href="/generate/qrgenerator.html">
+              <div class="get-code">
+                <img src="images/QR.png" />
+                <p>QR Code</p>
+              </div>
+            </a>
+            <a href="/barcode/barcode.html">
+              <div class="get-code">
+                <img src="images/BAR.png" />
+                <p>Bar Code</p>
+              </div>
+            </a>
           </div>
         </div>
-      </div>
-      <!-- 3 Langkah membuat QR -->
-      <div id="container-step">
+      </section>
+      <!-- SECTION 2 - Langkah membuat QR -->
+      <section id="section-2">
+        <div class="parent-section-2">
+          <h1>Buat Kode QR dalam 3 langkah</h1>
+          <ul>
+            <li>
+              <figure>
+                <figcaption><a href="#">Langkah 1</a></figcaption>
+                <img src="images/step1.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption><a href="#">Langkah 2</a></figcaption>
+                <img src="images/step2.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption><a href="#">Langkah 3</a></figcaption>
+                <img src="images/step3.jpg" alt="" />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- SECTION 3 - SlideShow -->
+      <section id="section-3">
         <h1>Buat Kode QR dalam 3 langkah</h1>
-        <br />
-        <div class="step">
-          <div class="step1">
-            <h1>Langkah 1</h1>
-            <img src="images/step1.jpg" />
-          </div>
-          <div class="step1">
-            <h1>Langkah 2</h1>
-            <img src="images/step2.jpg" />
-          </div>
-          <div class="step1">
-            <h1>Langkah 3</h1>
-            <img src="images/step3.jpg" />
-          </div>
-        </div>
-      </div>
-
-      <!-- SlideShow -->
-
-      <div class="container-ss">
-        <h1>Qr Code Dapat Digunakan Sebagai</h1>
-        <div class="container-slideshow">
-          <div class="conten-slideshow">
-            <div class="wrapper">
+        <div class="parent-section-3">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
               <img src="images/qr1.jpeg" />
-              <img src="images/qr2.jpg" />
+            </div>
+            <div class="mySlides fade">
               <img src="images/qr3.jpg" />
+            </div>
+            <div class="mySlides fade">
               <img src="images/qr4.jpg" />
             </div>
+            <div class="mySlides fade">
+              <img src="images/qr2.jpg" />
+            </div>
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
           </div>
-
-          <div class="title-slideshow">
+          <div class="gip">
             <iframe
               src="https://giphy.com/embed/J4mexweAVkV4WjCuvE"
-              width="500"
-              height="400"
+              width="100%"
+              height="100%"
               frameborder="0"
               class="giphy-embed"
               allowfullscreen
             ></iframe>
           </div>
         </div>
-      </div>
-
-      <!-- Pengenalan QR -->
-
-      <div class="first-qr">
-        <h1>Saya baru mengenal Kode QR. Apa yang harus saya ketahui?</h1>
-        <div class="first-qr-conten">
-          <video id="bg-vidio" controls="true" width="500" height="520">
-            <source src="images/vidio.mp4" type="video/mp4" />
-          </video>
-
-          <div class="description-qr">
-            <h3>
+      </section>
+      <!-- SECTION 4 - Pengenalan QR -->
+      <section id="section-4">
+        <div class="first-qr">
+          <h1>Saya baru mengenal Kode QR. Apa yang harus saya ketahui?</h1>
+          <div class="first-qr-conten">
+            <video id="bg-vidio" controls="true" width="100%">
+              <source src="images/vidio.mp4" type="video/mp4" />
+            </video>
+            <p class="description-qr">
               Kode QR adalah versi dua dimensi dari kode batang, biasanya
               terdiri dari pola piksel hitam dan putih. Denso Wave, anak
               perusahaan Jepang dari pemasok Toyota Denso, mengembangkannya
@@ -112,55 +131,92 @@
               adalah singkatan dari "Quick Response" atau akses cepat, yang
               mengacu pada akses instan ke informasi yang tersembunyi di dalam
               Kode.
-            </h3>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-parent">
+        <div class="cover-footer-conten">
+          <div class="footer-conten">
+            <h1>QR Generate</h1>
+            <br />
+            <p>
+              QR Generator adalah salah satu situs web untuk menggenerate Kode
+              QR, mengubah link atau no hp menjadi kode Qr. Kami menawarkan
+              keahlian pelanggan untuk semua hal tentang penggunaan Kode QR yang
+              benar. Website ini diciptakan untuk membantu dan mempermudah dalam
+              mengefisien waktu dengan kode Qr
+            </p>
+          </div>
+          <div class="footer-conten">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">Pelanggan</a></li>
+              <li><a href="#container-step">Langkah pembuatan</a></li>
+              <li><a href="https://cdnjs.com/libraries/qrious">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-conten">
+            <h3>Learn More</h3>
+            <ul>
+              <li><a href="#">Blog saya</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Berita</a></li>
+            </ul>
+          </div>
+          <div class="footer-conten">
+            <h3>Contact us</h3>
+            <ul>
+              <li><a href="mailto:bayukevinfarindra23@gmail.com">Email</a></li>
+              <li>
+                <a href="https://www.instagram.com/bayukevinf/">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/bayukevin.farindra.9/"
+                  >Facebook</a
+                >
+              </li>
+              <li><a href="https://github.com/Bayukevin">Github</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </main>
-    <!-- footer website -->
-    <footer>
-      <div class="cover-footer-conten">
-        <div class="footer-conten">
-          <h1>QR Generate</h1>
-          <br />
-          <a
-            >QR Generator adalah salah satu situs web untuk menggenerate Kode
-            QR, mengubah link atau no hp menjadi kode Qr. Kami menawarkan
-            keahlian pelanggan untuk semua hal tentang penggunaan Kode QR yang
-            benar. Website ini diciptakan untuk membantu dan mempermudah dalam
-            mengefisien waktu dengan kode Qr</a
-          >
-        </div>
-        <div class="footer-conten">
-          <h3>Product</h3>
-          <br />
-          <li><a href="#">Pelanggan</a></li>
-          <li><a href="#container-step">Langkah pembuatan</a></li>
-          <li><a href="https://cdnjs.com/libraries/qrious">API</a></li>
-        </div>
-        <div class="footer-conten">
-          <h3>Learn More</h3>
-          <br />
-          <li><a href="#">Blog saya</a></li>
-          <li><a href="#">Syarat & Ketentuan</a></li>
-          <li><a href="#">Kebijakan Privasi</a></li>
-          <li><a href="#">Berita</a></li>
-        </div>
-        <div class="footer-conten">
-          <h3>Contact us</h3>
-          <br />
-          <li><a href="mailto:bayukevinfarindra23@gmail.com">Email</a></li>
-          <li><a href="https://www.instagram.com/bayukevinf/">Instagram</a></li>
-          <li>
-            <a href="https://www.facebook.com/bayukevin.farindra.9/"
-              >Facebook</a
-            >
-          </li>
-          <li><a href="https://github.com/Bayukevin">Github</a></li>
-        </div>
-      </div>
       <hr />
-      <p>&copy; Copyright by bayukevinf</p>
+      <p class="coppyright">&copy; Copyright by bayukevinf</p>
     </footer>
+    <!-- make floating button -->
+    <div>
+      <a href="#section-1" class="btn-floating">
+        <p class="fas fa-arrow-up">^</p>
+      </a>
+    </div>
   </body>
+  <script>
+    // auto slide show
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
 </html>
