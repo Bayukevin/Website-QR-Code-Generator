@@ -1,6 +1,8 @@
 # Website-QR-Code-Generator
 Website Qr Code Generator dengan HTML, CSS, dan API JavaScript
 
+Live Demo : https://qrcodekevin.netlify.app/
+
 Output/Tampilan
 
 ![Boho Beige Minimalist Organized Desktop Wallpaper](https://user-images.githubusercontent.com/50587422/204096061-f3507f74-a186-4583-85ba-a35f2460a382.png)
