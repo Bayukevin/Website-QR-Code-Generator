@@ -1,7 +1,7 @@
 # Website-QR-Code-Generator
 Website Qr Code Generator dengan HTML, CSS, dan API JavaScript
 
-Live Demo : https://qrcodekevin.netlify.app/
+Live Demo : https://vin-qr.netlify.app/
 
 Output/Tampilan
 
